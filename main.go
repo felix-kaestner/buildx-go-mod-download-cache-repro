@@ -9,7 +9,6 @@ import (
 func main() {
 	app := lungo.New()
 
-	// Simply print "Hello, World!"
 	app.Get("/", func(c *lungo.Context) error {
 		return c.Text(http.StatusOK, "Hello, World!")
 	})
